@@ -7,8 +7,8 @@
 
 /* This is very specific to avoid hiding incorrect elements */
 ul[aria-label="Channels"] > div:nth-child(2), 
-ul[aria-label="Channels"] > li:has(div[class^="containerDefault"]:not(data-dnd-name)), 
-ul[aria-label="Channels"] > li:has(div[class^="containerDefault"]:not(data-dnd-name)) + div
+ul[aria-label="Channels"] > li:has(div[class*="containerDefault"]:not(data-dnd-name)), 
+ul[aria-label="Channels"] > li:has(div[class*="containerDefault"]:not(data-dnd-name)) + div
 {
     display: none;
 }
